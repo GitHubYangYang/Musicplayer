@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/img_background_playactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imagebutton_back_childactivity"
+            android:layout_width="25dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_back_to_listactivity" />
+
+        <TextView
+            android:id="@+id/textview_titlename_childactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="marquee"
+            android:lines="1"
+            android:textColor="#000"
+            android:textSize="30dip" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_musiclsit_childactivity"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#fff"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="true"
+        android:scrollingCache="true" />
+
+</LinearLayout>

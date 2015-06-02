@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/img_tab_compartline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/navigation_album_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_navigation_song" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/navigation_palyname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/navigation_artist"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="#000"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/navigation_play_image"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+</LinearLayout>
